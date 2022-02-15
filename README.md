@@ -19,7 +19,7 @@ specified in classpath, you can execute the commands listed below (from the root
 * `java build/libs/telemetry-test-task-1.0-SNAPSHOT.jar` will finish with an error, as no main class was specified either in manifest or in classpath variable.
 * `java -cp build/libs/telemetry-test-task-1.0-SNAPSHOT.jar ru.hse.OuterMainClass something else`
 will find and launch main method in OuterMainClass and ignore other arguments.
-* `java -cp build/libs/telemetry-test-task-1.0-SNAPSHOT.jar ru.hse.second.SecondMainClass ru.hse.second.FirstMainClass`
+* `java -cp build/libs/telemetry-test-task-1.0-SNAPSHOT.jar ru.hse.second.SecondMainClass ru.hse.first.FirstMainClass`
 will find and launch main method in SecondMainClass and ignore other arguments. (You can try out its variations
 too, you will see that only the first valid argument will be used. If the first argument is invalid - you will see an error)
 * ` java -cp build/libs/telemetry-test-task-1.0-SNAPSHOT.jar ru.hse.second.SecondMainClass` this example shows
