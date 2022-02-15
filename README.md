@@ -16,7 +16,7 @@ To build .jar file of the project enter the following command from the root fold
 Next, to see how the behaviour of the program differs depending on the order of arguments
 specified in classpath, you can execute the commands listed below (from the root as well):
 
-* `java -cp build/libs/telemetry-test-task-1.0-SNAPSHOT.jar` will show error, as no main class was specified.
+* `java build/libs/telemetry-test-task-1.0-SNAPSHOT.jar` will finish with an error, as no main class was specified either in manifest or in classpath variable.
 * `java -cp build/libs/telemetry-test-task-1.0-SNAPSHOT.jar ru.hse.OuterMainClass something else`
 will find and launch main method in OuterMainClass and ignore other arguments.
 * `java -cp build/libs/telemetry-test-task-1.0-SNAPSHOT.jar ru.hse.second.SecondMainClass ru.hse.second.FirstMainClass`
