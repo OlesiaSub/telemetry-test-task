@@ -1,5 +1,7 @@
 package ru.hse.second;
 
+import ru.hse.first.FirstHelper;
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -9,5 +11,7 @@ public class SecondMainClass {
     public static void main(String[] args) {
         logger.log(Level.INFO, "Launching main method of class SecondMainClass...");
         System.out.println("Hello, second world!");
+        FirstHelper helper = new FirstHelper();
+        helper.doSomething();
     }
 }
